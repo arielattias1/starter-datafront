@@ -7,7 +7,8 @@
   --------------------------------------------------------- */
 
 function compare(a, b) {
-    // write the callback 
+    // write the callback
+    return a-b 
 }
   
 var numbers = [4,2,5,1,3];
