@@ -13,17 +13,20 @@
 
 <script> 
 
+var salaries = data.data; 
+var salary = 0; 
+
 var count = function(){
-	// ------------------------
-	//		YOUR CODE
-	//   Count the number of jobs
-	//   with salaries over X.
-	//   X is the value of the
-	//   of the input box.
-	//	 Output result to 
-	//	 the output div.
-	// ------------------------
+	salary = Number(document.getElementById('salary').value); 
+	var filtered = salaries.filter((item) => (item[18]>salary)); 
+	console.log(filtered.length); 
+
 };
+
+function overx(item){
+	return item[18]>salary
+
+}; 
 
 </script>
 </html>
