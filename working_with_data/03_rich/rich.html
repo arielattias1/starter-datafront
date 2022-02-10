@@ -14,6 +14,15 @@ var salaries = data.data;
 var generatePoints = function(){
 	var points = [];
 
+	var filtered = salaries.filter((item) => Number(item[18]>250000));
+
+	filtered.forEach((item) =>{
+		points.push({
+			
+		}
+		
+	});
+
 	// sample object
 	// var item = {'job' : 'gardener', 'salary' : 60000};
 
